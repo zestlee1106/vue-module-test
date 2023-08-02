@@ -1,7 +1,11 @@
 {
-  "name": "vue-module-test",
+  "name": "vue-module-test-ywlee",
   "version": "0.0.1",
-  "private": true,
+  "files": [
+    "dist"
+  ],
+  "main": "./dist/my-lib.umd.js",
+  "module": "./dist/my-lib.es.js",
   "scripts": {
     "dev": "vite",
     "build": "run-p type-check build-only",
@@ -13,6 +17,12 @@
   },
   "dependencies": {
     "vue": "^3.3.4"
+  },
+  "exports": {
+    ".": {
+      "import": "./dist/my-lib.es.js",
+      "require": "./dist/my-lib.umd.js"
+    }
   },
   "devDependencies": {
     "@rushstack/eslint-patch": "^1.3.2",
