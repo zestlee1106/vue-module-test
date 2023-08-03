@@ -8,7 +8,7 @@ import vueDemi from 'vue-demi'
 export default defineConfig({
   plugins: [vue()],
   optimizeDeps: {
-    exclude: ["vue-demi"],
+    exclude: ["vue-demi", "vue-demi/plugin", 'vueDemi'],
   },
   build: {
     lib: {
