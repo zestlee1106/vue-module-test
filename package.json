@@ -1,6 +1,6 @@
 {
   "name": "vue-module-test-ywlee",
-  "version": "0.0.17",
+  "version": "0.0.18",
   "files": [
     "dist"
   ],
@@ -15,8 +15,7 @@
     "lint": "eslint . --ext .vue,.js,.jsx,.cjs,.mjs,.ts,.tsx,.cts,.mts --fix --ignore-path .gitignore",
     "format": "prettier --write src/"
   },
-  "dependencies": {
-  },
+  "dependencies": {},
   "exports": {
     ".": {
       "import": "./dist/my-lib.es.js",
