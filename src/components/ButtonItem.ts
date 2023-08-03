@@ -1,4 +1,4 @@
-import { defineComponent, h } from 'vue-demi'
+import { defineComponent, h, isVue2 } from 'vue-demi'
 
 export default defineComponent({
   name: 'ButtonItem',
@@ -11,14 +11,24 @@ export default defineComponent({
     }
   },
   render() {
-    const slot = this.$slots.default?.()
+    if (isVue2) {
+      return h(
+        'button',
+        {
+          on: {
+            click: this.onClick
+          }
+        },
+        this.$slots.default ?? 'test'
+      )
+    }
 
     return h(
       'button',
       {
         onClick: this.onClick
       },
-      slot
+      this.$slots.default ? this.$slots.default() : 'test'
     )
   }
 })
