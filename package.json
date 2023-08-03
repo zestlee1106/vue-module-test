@@ -15,7 +15,6 @@
     "lint": "eslint . --ext .vue,.js,.jsx,.cjs,.mjs,.ts,.tsx,.cts,.mts --fix --ignore-path .gitignore",
     "format": "prettier --write src/"
   },
-  "dependencies": {},
   "exports": {
     ".": {
       "import": "./dist/my-lib.es.js",
