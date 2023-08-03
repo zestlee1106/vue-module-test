@@ -19,12 +19,11 @@ export default defineConfig({
       fileName: (format) => `my-lib.${format}.js`
     },
     rollupOptions: {
-      external: ['vue'],
+      external: ['vue', 'vue-demi'],
       output: {
-        // Provide global variables to use in the UMD build
-        // Add external deps here
         globals: {
-          vue: 'Vue'
+          vue: 'Vue',
+          'vue-demi': 'vueDemi'
         }
       }
     }
