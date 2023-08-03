@@ -21,7 +21,6 @@ export default defineConfig({
       output: {
         globals: {
           vue: 'Vue',
-          vueDemi: 'vueDemi',
           'vue-demi': 'vueDemi',
         }
       }
