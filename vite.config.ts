@@ -20,7 +20,6 @@ export default defineConfig({
       output: {
         globals: {
           vue: 'Vue',
-          'vue-demi': 'vueDemi'
         }
       }
     }
