@@ -10,7 +10,7 @@ export default defineComponent({
       }
     }
   },
-  render(h2) {
+  render(h2?: Function) {
     if (h2 && typeof h2 === 'function') {
       const slot = this.$slots.default
       return h2(
@@ -22,7 +22,7 @@ export default defineComponent({
       )
     }
 
-    const slot = this.$slots.default()
+    const slot = this.$slots.default?.()
 
     return h(
       'button',
