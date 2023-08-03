@@ -16,7 +16,6 @@
     "format": "prettier --write src/"
   },
   "dependencies": {
-    "vue-demi": "^0.14.5"
   },
   "exports": {
     ".": {
@@ -42,7 +41,8 @@
     "typescript": "~5.1.6",
     "vite": "^4.4.6",
     "vue": "^3.3.4",
-    "vue-tsc": "^1.8.6"
+    "vue-tsc": "^1.8.6",
+    "vue-demi": "^0.14.5"
   },
   "peerDependencies": {
     "@vue/composition-api": "^1.0.0-rc.1",
